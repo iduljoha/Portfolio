@@ -1,1 +1,234 @@
+body{
+    background: #1b246ddc;
+    font-family: serif;
+}
+.navbar{
+    background-color: rgba(242, 242, 248, 0.562); /* Semi-transparent white background */
+    padding: 0px;
+    backdrop-filter: blur(0.5px); /* Apply blur effect to the navbar */
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    border-bottom: 2px solid #fff;
+    
 
+}
+.container-fluid{
+    justify-content: space-around;
+    text-align: center;
+    
+}
+.navbar-brand{
+    font-family: "Audiowide", sans-serif;
+    font-family: "Sofia", sans-serif;
+    font-size: 20px;
+    color: #502b2b;
+    text-shadow: 3px 3px 3px #ffffff;
+}
+.navbar-brand:hover{
+    color: #fff;
+}
+.navbar-nav li a {
+  margin-left: 20px;
+  padding: auto;
+  padding: 20px 0px 20px 0px;
+   
+}
+.navbar-nav li a:hover{
+    color: #fff;
+    box-shadow: rgb(248, 247, 247);
+    text-shadow: 3px 3px 3px #ffffff;
+}
+.navbar-nav li a ::after{
+    background:#fff;
+    width: 100%;
+    height: 100px;
+    position: absolute;
+}
+.navbar-toggler {
+    text-align: center;
+   
+    cursor: pointer;
+   
+    position: relative;
+    z-index: 1;
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+
+}
+
+.navbar-toggler .navbar-toggler-icon1,
+.navbar-toggler-icon2,
+.navbar-toggler-icon3 {
+    text-align: center;
+    background: #1E1F26;
+    width: 30px;
+    height: 2px;
+    display: block;
+    margin: 5px 0px;
+    transition: 0.4s;
+}
+
+.change .navbar-toggler-icon1 {
+    transform: translate(0, 8px) rotate(-45deg);
+  
+}
+
+.change .navbar-toggler-icon2 {
+    opacity: 0;
+   
+}
+
+.change .navbar-toggler-icon3 {
+    transform: translate(0, -6px) rotate(45deg);
+    
+}
+ /*================footer section================================*/
+ .text-center{
+    background-color: rgba(242, 242, 248, 0.562);
+ }
+
+/*==================start maim===================================*/
+#home{
+  
+
+}
+.row{
+   
+}
+.col-md-7{
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+}
+.information{
+    
+
+    text-align: center;
+    font-size: 16px;
+    
+    padding: 20px;
+    
+    
+}
+.col-md-5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 35px;
+     
+}
+.idul-img{
+    padding: 20px;
+    
+    width: 80%;
+    background: linear-gradient(to right, #96ebfa, #015e49); /* Initial background gradient */
+    animation: animateimg 4s linear infinite alternate;
+    border-radius: 50%;
+}
+ img{
+    
+    border-radius: 50%;
+}
+@keyframes animateimg{
+    0% {
+        background-position: 0% center;
+    }
+    100% {
+        background-position: 100% center;
+    }
+}
+@media screen and (max-width:678px) {
+    .col-md-5{
+        margin: auto;
+        
+    }
+    .col-md-5 img{
+        padding: 0;
+        width:100%;
+       
+    }
+    .col-md-7 h1,h2{
+       font-size: 20px;
+       
+    }
+    .text-info{
+       
+        
+    }
+    
+}
+/*=======================================About section=========================*/
+.about button{
+    text-align: center;
+    background-color: #26bdf8;
+    color: rgb(17, 0, 0);
+    padding-top: 20;
+    border-radius: 10px;
+}
+.image img{
+    border-radius: 30px ;
+}
+
+
+/*=======================================project section=========================*/
+.pro{
+   background-image: url(/images/Ecartes.jpg);
+   
+   width: 100%;
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-attachment: fixed;
+   
+   
+   
+}
+
+.pro.container{
+    
+}
+.pro .image img{
+  border-radius: 50%;
+}
+.pro.container h2 ,h1 ,h3{
+   
+    z-index: 1;
+}
+.row{
+    text-align: justify;
+ 
+}
+
+/*===================================contect section =====================*/
+.section-contect{
+    background: #777da8;
+}
+
+.icon{
+    text-decoration: none;
+    font-size: 35px;
+    margin-left: 10px;
+}
+.icon:hover{
+    color: #26bdf8;
+}
+.whatshap-icon{
+    font-size: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.whatshap-icon:hover{
+   color: #05ca30;
+}
+.github-icon{
+    font-size: 35px;
+    margin-left: 10px;
+    text-decoration: none;
+
+}
+.github-icon:hover{
+    color: #000000;
+}
